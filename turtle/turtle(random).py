@@ -7,7 +7,7 @@ t.bgcolor('black')
 
 color = ['paleturquoise', 'mediumturquoise', 'lightskyblue', 'powderblue', 'lightblue']
 
-for i in range(1000000000000):
+for i in range(10000):
     t.penup()
     
     x = random.randint(-400,400)
