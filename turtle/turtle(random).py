@@ -5,9 +5,9 @@ t.speed(0)
 t.shape('turtle')
 t.bgcolor('black')
 
-color = ['magenta', 'deepskyblue', 'greenyellow', 'deeppink', 'gold']
+color = ['paleturquoise', 'mediumturquoise', 'lightskyblue', 'powderblue', 'lightblue']
 
-for i in range(300):
+for i in range(1000000000000):
     t.penup()
     
     x = random.randint(-400,400)
@@ -18,11 +18,10 @@ for i in range(300):
     t.pendown()
     
     t.color(random.choice(color))
-    draw = random.choice([t.circle, t.dot])
     size = random.randint(0, 100)
-    draw(size)
+    t.dot(size)
 
-    t.mainloop()
+t.mainloop()
     
     
 
