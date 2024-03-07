@@ -63,14 +63,22 @@ def clear() :
     try_count = 0
     answer = []
     score = 0
-    number = []
+    # 랜덤으로 생성된 로또 번호도 초기화
+    number1 = random.randint(1,45)
+    number2 = random.randint(1,45)
+    number3 = random.randint(1,45)
+    number4 = random.randint(1,45)
+    number5 = random.randint(1,45)
+    number6 = random.randint(1,45)
+    number = [number1, number2, number3, number4, number5, number6]
+    # 라벨에 나타나는 숫자와 결과를 초기화
     label_num1.configure(text = '')
     label_num2.configure(text = '')
     label_num3.configure(text = '')
     label_num4.configure(text = '')
     label_num5.configure(text = '')
     label_num6.configure(text = '')
-    label_result.configure(text = '')
+    label_result.configure(text = '초기화 완료')
 
 
 number1 = random.randint(1,45)
